@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class FlapScript : MonoBehaviour
 {
-    public float flapup;
-    public float flapdown;
+    private float flapup;
+    private float flapdown;
 
     // Start is called before the first frame update
     void Awake()
     {
         if(gameObject.CompareTag("Left Flap"))
         {
-            //flapup = gameObject.transform.rotation.z;
             Debug.Log("This is left flap");
         }
         else if(gameObject.CompareTag("Right Flap"))
@@ -27,12 +26,12 @@ public class FlapScript : MonoBehaviour
         
     }
     
-    public void FlapU()
+    public void FlapUp()
     {
 
     }
 
-    public void FlapD()
+    public void FlapDown()
     {
 
     }
