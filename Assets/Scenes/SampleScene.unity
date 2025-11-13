@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,8 +137,8 @@ GameObject:
   - component: {fileID: 660022474}
   - component: {fileID: 660022478}
   m_Layer: 0
-  m_Name: Right Flap
-  m_TagString: Right Flap
+  m_Name: Left Flap
+  m_TagString: Left Flap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,6 +231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4082f95e0c7a95b478991b5782aa80ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flapup: 0
+  flapdown: 0
+  rFlap: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,8 +519,8 @@ GameObject:
   - component: {fileID: 1816242759}
   - component: {fileID: 1816242763}
   m_Layer: 0
-  m_Name: Left Flap
-  m_TagString: Left Flap
+  m_Name: Right Flap
+  m_TagString: Right Flap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,6 +613,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4082f95e0c7a95b478991b5782aa80ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flapup: 0
+  flapdown: 0
+  rFlap: 0
 --- !u!1 &1906534068
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1906534069
 Rigidbody:
   m_ObjectHideFlags: 0
