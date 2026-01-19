@@ -39,7 +39,20 @@ public class FlapScript : MonoBehaviour
         rFlap = (int)gameObject.transform.rotation.eulerAngles.z;
         
     }
-    
+     
+    public void FlapMovement(InputAction.CallbackContext context)
+    {
+       if(context.started)
+       {
+            FlapU();
+       }
+       else
+       {
+            FlapD();
+       }
+
+    }
+
     public void FlapU()
     {
         if (rFlap != flapup) // 330 > 30
