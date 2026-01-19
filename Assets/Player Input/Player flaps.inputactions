@@ -1,0 +1,54 @@
+{
+    "name": "Player flaps",
+    "maps": [
+        {
+            "name": "Ball Flaps",
+            "id": "d67c2742-84b6-43d1-bcbf-0df8d07debd6",
+            "actions": [
+                {
+                    "name": "Left Flap",
+                    "type": "Button",
+                    "id": "1782993e-9b58-4e50-90c9-153b4d191de4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Right Flap",
+                    "type": "Button",
+                    "id": "faf3d1eb-ec77-47ae-90c8-d5e12faa5069",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4d837b0e-7b8f-43c2-9267-c9aff4326576",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Flap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d681d684-9cf7-41d7-92d1-6fe1815ac2c4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Flap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
