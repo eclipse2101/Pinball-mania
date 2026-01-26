@@ -9,6 +9,7 @@ public class FlapScript : MonoBehaviour
     public float flapdown;
     public float rFlap;
     public float speed;
+    public bool control = false; 
 
     private Vector3 vup;
     private Vector3 vdown; 
@@ -37,29 +38,36 @@ public class FlapScript : MonoBehaviour
     void FixedUpdate()
     {
         rFlap = (int)gameObject.transform.rotation.eulerAngles.z;
-        FlapU();
-        
+
+        if(control == true)
+        {
+            FlapU();
+        }
+        else
+        {
+            FlapD();
+        }
     }
      
-    /*
+  
     public void FlapMovement(InputAction.CallbackContext context)
     {
-       if(context.started)
+       if(context.started || context.performed)
        {
-            FlapU();
+            control = true; 
        }
        else
        {
-            FlapD();
+            control = false; 
        }
 
     }
-    */
+
     public void FlapU()
     {
         if (rFlap != flapup) // 330 > 30
             {
-                transform.Rotate(vup);
+                transform.Rotate(vup * speed);
             }
  
     }
@@ -68,7 +76,7 @@ public class FlapScript : MonoBehaviour
     {
         if (rFlap != flapdown)
         {
-            transform.Rotate(vdown);
+            transform.Rotate(vdown * speed);
         }
     }
 }
